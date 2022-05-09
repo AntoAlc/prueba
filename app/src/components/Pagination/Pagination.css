@@ -1,0 +1,42 @@
+.pagination-nav {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100vw;
+}
+
+.pagination-list {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-list li {
+    list-style: none;
+}
+
+.pagination-list li:not(:first-child) {
+    border-color: #31363F;
+    border-left: 0.01rem solid;
+    list-style: none;
+}
+
+.pagination-a {
+    color: #31363F;
+    padding: 0.375rem 0.5rem;
+}
+
+.pagination-a-active {
+    color:#f0572d;
+    outline:none;
+    padding: 0.375rem 0.5rem;
+}
+
+@media (min-width: 415px) {
+    .pagination-list {
+        flex-wrap: wrap;
+        white-space: pre-wrap;
+        width: 75%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

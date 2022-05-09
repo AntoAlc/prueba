@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    text-align: center;
+}
+
+.linkRegistroOCrearCuenta{
+    font-size: 0.8rem;
+}
+
+.linkRegistroOCrearCuenta a{
+    font-size: 0.8rem;
+}
+
+
+.contenedorEyePassword {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.buttomEyePassword{
+    text-align: center;
+    margin-top: 2.2%;
+    margin-right: 1.2%;
+    border: none;
+    color: rgb(133, 133, 133);
+    cursor: pointer;
+}
+
+.password {
+    letter-spacing: 0.3rem;
+
+}
+
+.formInicioSesion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    Width: 85.38rem;
+    Height: 44.94rem;
+    Top:-0.19rem;
+   /* */
+}
+
+.buttonRegistrate {
+    font-style: normal;
+    text-decoration-color: #F0572D;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1.19rem;
+    color: var(--primario);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mensajeError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

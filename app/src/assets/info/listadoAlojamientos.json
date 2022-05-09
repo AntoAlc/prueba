@@ -1,0 +1,85 @@
+{
+    "accommodations": [
+        {
+            "img": "/img/imagenHardcodeadaCasa.jpeg",
+            "category": "Casa",
+            "title": "Casa con pileta en Pilar",
+            "location": {
+                "city": "Buenos Aires",
+                "country": "Argentina",
+                "coordinates":[-38.00517576459141, -57.54376125208556]
+            },
+            "description": "En el corazón de Puerto Madero, disfruta de un albergue inspirado en las pasiones de Buenos Aires."
+        },
+        {
+            "img": "/img/imagenHardcodeadaCabania.jpeg",
+            "category": "Cabaña",
+            "title": "Cabaña con vistas únicas.",
+            "location": {
+                "city": "Cariló",
+                "country": "Argentina"
+            },
+            "description": "En el corazón del bosque y entre los árboles de Cariló."
+        },
+        {
+            "img": "/img/imagenHardcodeadaFrenteAlMar.jpeg",
+            "category": "Casa",
+            "title": "Apartamento sobre Playa Mansa",
+            "location": {
+                "city": "Punta del Este",
+                "country": "Uruguay"
+            },
+            "description": "En el corazón de Punta del Este, disfruta de un albergue frente a Playa Mansa."
+        },
+        {
+            "img": "/img/imagenHardcodeadaDepartamento.jpeg",
+            "category": "Departamento",
+            "title": "Departamento en complejo residencial entero",
+            "location": {
+                "city": "Buenos Aires",
+                "country": "Argentina"
+            },
+            "description": "En el corazón de Puerto Madero, disfruta de un albergue inspirado en las pasiones de Buenos Aires."
+        },
+        {
+            "img": "/img/imgHardcodeadaCasaSierras.jpg",
+            "category": "Casa",
+            "title": "Casa con parque y asador",
+            "location": {
+                "city": "Villa General Belgrano, Córdoba",
+                "country": "Argentina"
+            },
+            "description": "Cat ipsum dolor sit amet, soft kitty warm kitty little ball of furr, but climb leg catasstrophe. Annoy kitten brother with poking. Jump up to edge of bath, fall in then scramble in a mad panic to get out slap owner's face at 5am until human fills food dish i am the best."
+        },
+        {
+            "img": "/img/imgHardcodeadaCasa.jpg",
+            "category": "Casa",
+            "title": "Casa familiar apta para mascotas",
+            "location": {
+                "city": "Mendoza",
+                "country": "Argentina"
+            },
+            "description": "Cat ipsum dolor sit amet, purr while eating. Walk on a keyboard flee in terror at cucumber discovered on floor for poop in the plant pot."
+        },
+        {
+            "img": "/img/imagenHardcodeadaDepartamento2.jpeg",
+            "category": "Departamento",
+            "title": "Departamento en el centro de Mar del Plata",
+            "location": {
+                "city": "Mar del Plata",
+                "country": "Argentina"
+            },
+            "description": "Cat ipsum dolor sit amet, eat owner's food yet walk on a keyboard. Need to chase tail. Intently sniff hand kitty kitty pussy cat doll. Stare at imaginary bug purrrrrr."
+        },
+        {
+            "img": "/img/imagenHardcodeadaCabania.jpeg",
+            "category": "Cabaña",
+            "title": "Cabaña de fin de semana",
+            "location": {
+                "city": "San Carlos de Bariloche",
+                "country": "Argentina"
+            },
+            "description": "Cat ipsum dolor sit amet, that box? i can fit in that box purr when being pet."
+        }
+    ]
+}

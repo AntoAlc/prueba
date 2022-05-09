@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+:root {
+    --primario: #f0572d;
+    --colorSecundario: #31363f;
+    --colorTercero: #191b1d;
+    --colorCuarto: #dfe4ea;
+    --colorQuinto: #ffffff;
+}
+
+textarea {
+    resize: none;
+}
+
+.administration-select .custom-select {
+    width: 100%;
+}
+
+.administration-select .administration-select .select-selected:after {
+    top: 35%;
+}
+
+.administration-name .select-selected:after {
+    top: 35%;
+}
+
+.administration-select .select-selected .select-arrow-active:after {
+    border-color: transparent transparent var(--colorTercero) transparent;
+}
+
+.administration-select .select-selected {
+    color: var(--colorSecundario);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    width: 44vw;
+}
+
+.container-form {
+    border-radius: 0;
+    background-color: var(--colorQuinto);
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorCuarto);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    min-height: 13rem;
+    margin-top: 2rem;
+    padding: 2.5rem;
+}
+
+.accommodation-politics label {
+    display: flex;
+    flex-direction: column;
+}
+
+.administation-form {
+    background-color: var(--colorCuarto);
+    padding: 2rem;
+}
+
+.li-administration {
+    list-style: none;
+}
+
+.administation-form h2 {
+    color: var(--colorSecundario);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.accommodation-data-container {
+    display: grid;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1rem;
+    column-gap: 1rem;
+    grid-row-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.label-administation-data {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorTercero);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.label-administation-data-description {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorTercero);
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.input-administration-data {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    width: 100%;
+}
+
+
+/*Caracteristicas*/
+
+.caracteristic-list-idem {
+    display: flex;
+}
+
+.accomodations-characteristics-container {
+    padding: 0.5rem;
+    margin-right: 3%;
+    margin-left: 3%;
+    background-color: rgba(92, 83, 83, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorCuarto);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 2vh;
+    padding: 2.5rem;
+}
+
+.h2-caracterisitcas {
+    margin-top: 1.75rem;
+}
+
+.characteristics-list {
+    color: #4F4F50;
+    row-gap: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+
+.checkbox-input {
+    margin-right: 0.4rem;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--primario);
+    border-color: var(--primario);
+}
+
+
+/*normas*/
+
+.accommodation-politics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+}
+
+.accomodations-normas-container {
+    background-color: var(--colorQuinto);
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorCuarto);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    min-height: 13rem;
+    margin-top: 2vh;
+    padding: 2.5rem;
+}
+
+.label-textArea-administration {
+    display: flex;
+    flex-direction: column;
+    color: var(--colorTercero);
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.textArea-administration {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    width: 100%;
+}
+
+.h2-normas {
+    margin-top: 1.75rem;
+}
+
+
+/*Url Images add y delete*/
+
+.h2-add-images {
+    margin-top: 1.75rem;
+}
+
+.add-images-container {
+    background-color: rgba(92, 83, 83, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorCuarto);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 2vh;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-columns: 15fr 1fr;
+    grid-column-gap: 0.5rem;
+}
+
+.delete-images {
+    background-color: rgba(92, 83, 83, 0.1);
+    border-radius: 0.5rem;
+    border: 1px solid var(--colorCuarto);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 2vh;
+    padding: 2.5rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 15fr 1fr;
+    grid-column-gap: 0.5rem;
+}
+
+.h3-urlImages,
+.input-urlImages {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    width: 100%;
+}
+
+.button-add {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: var(--primario);
+    color: var(--colorQuinto);
+    cursor: pointer;
+}
+
+.button-delete {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: var(--colorTercero);
+    color: var(--colorQuinto);
+    cursor: pointer;
+}
+
+
+/*botton crear*/
+
+.button-crear {
+    border-style: none;
+    transition: 0.5s;
+    background: var(--primario);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px var(--colorCuarto);
+    padding: 0.7rem;
+    text-align: center;
+    width: calc(100% - 56rem);
+    margin-top: 2.5rem;
+    margin-left: 28.5rem;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.p-mensajeCamposObligatorios {
+    text-align: center;
+    margin-top: 0.6rem;
+    position: absolute;
+    margin-left: 30rem;
+    color: var(--primario);
+}
+
+.p-mensajeUrlObligatorios {
+    text-align: center;
+    margin-top: 0.6rem;
+    position: absolute;
+    margin-left: 34.5vw;
+    color: var(--primario);
+}
+
+@media (max-width: 768px) {
+    .button-crear {
+        width: calc(100% - 25rem);
+        margin-top: 2.5rem;
+        margin-left: 11.5rem;
+    }
+    .accommodation-politics {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .caracteristic-list-idem {
+        display: flex;
+    }
+    .p-mensajeUrlObligatorios {
+        margin-left: 9rem;
+    }
+    .p-mensajeCamposObligatorios {
+        margin-left: 11.5rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .accommodation-data-container {
+        display: grid;
+    }
+    .container-grid {
+        margin-right: 4%;
+        margin-left: 3%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .button-crear {
+        width: calc(100% - 4rem);
+        margin-top: 3.5rem;
+        margin-left: 9%;
+        margin-bottom: 10%;
+    }
+    .administation-form {
+        padding: 0%;
+    }
+    .container-form {
+        padding: 0%;
+    }
+    .administation-form h2 {
+        margin-left: 3%;
+        padding-top: 0%;
+        margin-bottom: 0%;
+    }
+    form .h2-titulo {
+        margin-left: 3%;
+        padding-top: 3%;
+        margin-bottom: -4%;
+    }
+    .add-images-container {
+        background-color: rgba(92, 83, 83, 0.1);
+        border-radius: 0.5rem;
+        border: 1px solid var(--colorCuarto);
+        box-shadow: 0px 4px 4px 0px #00000040;
+        margin-top: 2vh;
+        padding: 2.5rem;
+        display: grid;
+        grid-template-columns: 7fr 1fr;
+        grid-column-gap: 0.5rem;
+    }
+    .container-form {
+        border-radius: 0;
+    }
+    .label-administation-data-description {
+        margin-right: 4%;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    .administration-select .select-selected {
+        width: 94vw;
+    }
+    .administration-name .select-selected {
+        width: 94vw;
+    }
+    .characteristics-list {
+        color: #4F4F50;
+        grid-row-gap: 0.75rem;
+        row-gap: 0.75rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1rem;
+        grid-column-gap: 0rem;
+        padding: 0%;
+    }
+    .accomodations-characteristics-container {
+        padding: 0.5rem;
+        margin-right: 4%;
+        margin-left: 3%;
+        padding: 1rem;
+        margin-left: 5%;
+    }
+    .accomodations-normas-container {
+        margin-right: 4%;
+        border: 1px solid var(--colorQuinto);
+        border-radius: 0%;
+        padding: 0.5rem;
+        border: none;
+        box-shadow: none;
+    }
+    .accommodation-politics {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+        margin-left: 5%;
+    }
+    .label-textArea-administration {
+        margin-top: 1rem;
+    }
+    .headerPage {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center;
+    }
+}

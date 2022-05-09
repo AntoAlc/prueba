@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+    --colorQuinto: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buscarPorTipoAlojamiento,
+.recomendaciones {
+    padding: 0 2.5rem;
+}
+
+.h2RecomendacionesYBorrarFiltros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btns-filtrosYfavoritos {
+    display: flex;
+    align-items: center;
+}
+
+.btn-borrarFiltros{
+    background: #F0572D;
+    border-radius: 0.31rem;
+    border-radius: 0.31rem;
+    border: none;
+    box-shadow: 0px 0.13rem 0.25rem rgb(0 0 0 / 12%);
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 2.5rem;
+    left: 0px;
+    margin-left: 0.63rem;
+    margin-top: 1%;
+    width: 12.88rem;
+}
+
+.btn-verFavoritos{
+    background: #F0572D;
+    border-radius: 0.31rem;
+    border-radius: 0.31rem;
+    border: none;
+    box-shadow: 0px 0.13rem 0.25rem rgb(0 0 0 / 12%);
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 2.5rem;
+    left: 0px;
+    margin-left: 0.63rem;
+    margin-top: 1%;
+    width: 12.88rem;
+}
+
+@media (max-width: 768px) {
+    .buscarPorTipoAlojamiento,
+    .recomendaciones {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 415px) {
+    .btn-verFavoritos{
+        margin-top: 10%;
+        width: 40vw;
+    }
+
+    .buscarPorTipoAlojamiento,
+    .recomendaciones {
+        padding: 0 3%;
+    }
+}

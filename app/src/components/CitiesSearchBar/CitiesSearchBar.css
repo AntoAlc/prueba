@@ -1,0 +1,131 @@
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+    --colorQuinto: #FFFFFF;
+}
+
+.cities-searchbar-container {
+    position: relative;
+}
+
+#city-suggestions {
+    background-color: var(--colorQuinto);
+    border-radius: 0px 0px 0.31rem 0.31rem;
+    box-shadow: 0px 0.25rem 0.25rem rgb(0 0 0 25%);
+    box-sizing: border-box;
+    position: relative;
+    width: 19.9rem;
+    z-index: 1;
+}
+
+.places-search-bar {
+    align-items: center;
+    border-bottom: 0.06rem solid var(--primario);
+    display: flex;
+    font-weight: bold;
+    line-height: 1.19rem;
+    padding: 1.56rem 0 1.31rem 1.56rem;
+}
+
+.container-cities {
+    margin-right: 0.5vw;
+    position: relative;
+    z-index: 90;
+}
+
+.container-cities .icon-ubication {
+    color: var(--colorTercero);
+    font-size: 1.1rem;
+    top: 0.7rem;
+    left: 1rem;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.fa-calendar-day {
+    color: var(--colorSecundario);
+    left: 1.1rem;
+    opacity: 0.5;
+    position: relative;
+    top: 1.8rem;
+    z-index: 100;
+}
+
+.busqueda-formulario {
+    background: var(--colorQuinto);
+    border-radius: 0.31rem;
+    box-shadow: 0 0.06rem 0.31rem rgba(0, 0, 0, 0.15);
+    height: 2.5rem;
+    padding-left: 1.88rem;
+    width: 20rem;
+}
+
+.places-search-bar:hover {
+    background-color: var(--primario);
+    color: var(--colorCuarto);
+}
+
+@media (max-width: 1100px) {
+    .container-cities {
+        flex-direction: row;
+    }
+    .busqueda-formulario {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .busqueda-formulario {
+        width: 19rem;
+    }
+    .container-cities {
+        margin-right: 0.1vw;
+    }
+}
+
+@media (max-width: 870px) {
+    .busqueda-formulario {
+        width: 16.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-cities {
+        flex-direction: row;
+    }
+    .busqueda-formulario {
+        width: 35vw;
+    }
+    #city-suggestions {
+        width: 34.6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container-cities {
+        flex-direction: row;
+    }
+    .busqueda-formulario {
+        gap: 3vh;
+        padding-left: 2.43rem;
+        width: 90vw;
+    }
+    .date-search-bar {
+        bottom: 3vh;
+    }
+}
+
+@media (max-width: 415px) {
+    .fa-calendar-day {
+        left: 2rem;
+        top: 0;
+    }
+
+    #city-suggestions {
+        left: 0.4rem;
+        width: 89vw;
+        z-index: 101;
+    }
+}

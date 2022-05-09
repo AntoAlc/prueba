@@ -1,0 +1,18 @@
+.rc-rate {
+    margin-top: -0.30rem !important;
+}
+
+.rc-rate-star-half:hover .rc-rate-star-first,
+.rc-rate-star-full:hover .rc-rate-star-second {
+    color: #F0572D !important;
+}
+
+.rc-rate-star-half .rc-rate-star-first,
+.rc-rate-star-full .rc-rate-star-second {
+    color: #F0572D !important;
+}
+
+.rc-rate-star {
+    color: #BEBEBE !important;
+    margin-right: 1px !important;
+}

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.administration-name
+.custom-selects {
+    position: relative;
+}
+
+
+/*hiding the original element*/
+.administration-name
+.custom-selects select {
+    display: none;
+}
+
+.administration-name
+.select-selected {
+    background-color: var(--colorQuinto);
+    color: var(--colorSecundario);
+}
+
+
+/*Arrow inside the select element*/
+.administration-name
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: var(--colorTercero) transparent transparent transparent;
+}
+
+
+/* Point the arrow upwards when the select box is open (active): */
+
+.administration-name
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent var(--colorTercero) transparent;
+}
+
+
+/* style the items (options), including the selected item: */
+.administration-name
+.select-items div {
+    color: var(--colorSecundario);
+    border: 1px solid transparent;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    padding: 0.75rem 0 0.75rem 1.25rem;
+    text-align: left;
+    width: 41vw;
+}
+
+.administration-name
+.select-selected {
+    color: var(--colorSecundario);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 5px 0px #00000026;
+    box-sizing: border-box;
+    color: var(--colorTercero);
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0em;
+    line-height: 1rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    text-align: left;
+    width: 44vw;
+}
+
+.administration-name
+.custom-selects {
+    width: 100%;
+}
+
+
+/* Style items (options): */
+
+.administration-name
+.select-items {
+    position: absolute;
+    background-color: var(--colorCuarto);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+
+/* Hide the items when the select box is closed: */
+
+.administration-name
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: var(--primario);
+    width: 100%;
+}

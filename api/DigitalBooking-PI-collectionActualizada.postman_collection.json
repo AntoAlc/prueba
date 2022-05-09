@@ -1,0 +1,782 @@
+{
+	"info": {
+		"_postman_id": "13cf86fd-cf3a-4487-9184-88fe8b489262",
+		"name": "DigitalBooking-PI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "ObtenerTodasLasCategorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/categorias/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"categorias",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearCategorias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\":1,\n    \"category\": \"Cabanas\"\n   \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost8082}}/categorias/crear",
+							"host": [
+								"{{localhost8082}}"
+							],
+							"path": [
+								"categorias",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "ObtenerTodosLosUsuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/usuarios/todos",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"usuarios",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LogearseUSER",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "simon",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "paula@digital.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{ip}}/login",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LogearseADMIN",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "simon",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "diego@digital.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/login",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"pepe\",\n        \"lastName\": \"lopez\",\n        \"email\": \"pepe@dh.com\",\n        \"password\": \"pepe123\",\n        \"role\": {\n            \"id\": 2\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ip}}/usuarios/crear",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"usuarios",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerUsuarioPorEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pepe@dh.com\",\n    \"password\": \"pepe123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/usuarios/obtenerUsuario",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"usuarios",
+								"obtenerUsuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alojamientos",
+			"item": [
+				{
+					"name": "ObtenerTodosLosAlojamientos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmb28iLCJleHAiOjE2MzcyNjc4OTksImlhdCI6MTYzNzI2NzgzOX0.RCKYdvNNPZsj2tsKi8CMsFxl8MDYYB7cMi00wLmtzR8",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{ip}}/alojamientos/todos",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"alojamientos",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerAlojamientosPorCategoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/alojamientos/categorias/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"categorias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CrearNuevoAlojamiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Casa con pileta en Mardel\",\n        \"description\": \"En el corazón de Puerto Madero, disfruta de un albergue inspirado en las pasiones de Buenos Aires.\",\n        \"address\": \"Callecita 1234\",\n        \"category\": {\n            \"id\": 1\n        },\n        \"city\": {\n            \"id\":1\n        }, \n        \"characteristics\": [\n            {\n                \"id\": 1\n            }, \n            {\n                \"id\": 4\n            }\n        ], \n        \"images\" : [\n            {\n                \"title\": \"esta es una descripación que va en el alt de la imágen\",\n                \"urlImage\": \"url\"\n                \n            }, \n            {\n                \"title\": \"esta es una descripación que va en el alt de la imágen\",\n                \"urlImage\": \"url\"\n            }\n        ], \n        \"cancellationPolicy\": {\n            \"cancellationPolicy\": \"Nuevas politicas de cancelación\"\n        }, \n        \"healthAndSafty\": {\n            \"healthAndSafty\": \"Nuevas políticas de salud y seguridad\"\n        },\n        \"housePolicies\": {\n            \"housePolicies\": \"Nuevas normas de la casa\"\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/alojamientos/crear",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarAlojamiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/alojamientos/eliminar/52",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"eliminar",
+								"52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarAlojamiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"id\": 1,\n      \"paciente\": {\"id\": \"1\"},\n      \"odontologo\": {\"id\": \"1\"},\n      \"fecha\": \"2021-05-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/alojamientos/actualizar",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerCategoriaPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerAlojamientoPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/alojamientos/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerAlojamientoPorIdDeCiudad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/alojamientos/ciudades/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"alojamientos",
+								"ciudades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ciudades",
+			"item": [
+				{
+					"name": "ObtenerTodasLasCiudades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost8082}}/ciudades/todos",
+							"host": [
+								"{{localhost8082}}"
+							],
+							"path": [
+								"ciudades",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Token",
+			"item": [
+				{
+					"name": "GetAuthenticate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () ",
+									"    {pm.response.to.have.status(200)}",
+									");",
+									"",
+									"pm.test(\"Response has a JSON body\", function () ",
+									"    {pm.response.to.be.json;}",
+									");",
+									"",
+									"pm.test(\"Response has a token property\", function () ",
+									"   { var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.token).to.be.string;}",
+									");",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"simonsimonian37@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ip}}/authenticate",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HelloEndpoint",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaW1vbnNpbW9uaWFuMzdAZ21haWwuY29tIiwiZXhwIjoxNjM4NDYxMDQ0LCJpYXQiOjE2Mzg0NjA5ODN9.0r-QFCHofQYyWkUm4QRSbht5Px3m-c9zaJjiWI9Gsq4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{localhost}}/hello",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"hello"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservas",
+			"item": [
+				{
+					"name": "CrearReserva",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaW1vbnNpbW9uaWFuMzdAZ21haWwuY29tIiwiZXhwIjoxNjM4ODU2NzU5LCJpYXQiOjE2Mzg4NTA3NTl9.daSsy1RUTIFeNGZA1NWQn3hoMpvb0dmeytLJRK3Jk2M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"checkInTime\": 22,\n        \"initialDate\": \"2019-02-27\",\n        \"finalDate\": \"2019-02-28\",\n        \"bookingHolderName\": \"marta\",\n        \"bookingHolderLastName\": \"perez\",\n        \"bookingHolderEmail\": \"marta@perez.com\",\n        \"bookingHolderCity\": \"Rosario\",\n        \"accommodation\": {\n            \"id\":5\n        },\n        \"user\": {\n            \"id\": 1\n        }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/reservas/crear",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"reservas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerReservaPorAlojamientoId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}/reservas/alojamientos/22",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"reservas",
+								"alojamientos",
+								"22"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Characteristics",
+			"item": [
+				{
+					"name": "ObtenerTodasLasCaracteristicas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/caracteristicas/todos",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"caracteristicas",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Puntiaciones",
+			"item": [
+				{
+					"name": "ObtenerTodasLasPuntuaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}/puntuaciones/todos",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"puntuaciones",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GenerarPuntuación",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"score\": 5,\n    \"accommodation\":{\n        \"id\": 25\n    },\n    \"user\":{\n        \"id\":3\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ip}}/puntuaciones/crear",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"puntuaciones",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerPuntuacionesDeUnAlojamiento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/puntuaciones/alojamientos/1",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"puntuaciones",
+								"alojamientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Favoritos",
+			"item": [
+				{
+					"name": "ObtenerTodosLosFavoritos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}/favoritos/todos",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"favoritos",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GenerarUnNuevoFavorito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"accommodation\": {\n        \"id\": 2\n    },\n    \"user\": {\n        \"id\": 1\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/favoritos/crear",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"favoritos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EliminarFavorito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}/favoritos/eliminar/21",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"favoritos",
+								"eliminar",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObtenerFavoritosPorUserID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ip}}/favoritos/usuarios/10",
+							"host": [
+								"{{ip}}"
+							],
+							"path": [
+								"favoritos",
+								"usuarios",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Email",
+			"item": [
+				{
+					"name": "sendEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"simonsimonian37@gmail.com\",\n    \"subject\": \"prueba1\",\n    \"body\": \"este es un correo de prueba\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/email/verificacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"email",
+								"verificacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

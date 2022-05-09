@@ -1,0 +1,14 @@
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+    --colorQuinto: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}

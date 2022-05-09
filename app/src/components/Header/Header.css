@@ -1,0 +1,555 @@
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+    --colorQuinto: #FFFFFF;
+}
+
+.header-element {
+    align-items: center;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    padding: 0.94rem 2.5rem 0.81rem 2.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.adminButton {
+    background-color: white;
+    font-family: Roboto;
+    background-color: white;
+    font-family: Roboto;
+    font-size: 100%;
+    color: #545776;
+    cursor: pointer;
+}
+
+.vl {
+    border-left: solid var(--primario);
+    height: 4rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logueadoName {
+    display: flex;
+    flex-direction: column;
+}
+
+.bm-menu {
+    display: none;
+}
+
+.bm-overlay {
+    display: none;
+}
+
+.bm-burger-button {
+    display: none;
+}
+
+.enlaces-header {
+    color: var(--primario);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.19rem;
+    text-decoration-color: var(--primario);
+    text-decoration: none;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-button {
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+
+.container-button {
+    transition: 0.5s;
+}
+
+.container-button:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.h2-title {
+    color: var(--colorSecundario);
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.47rem;
+    margin-left: 0.75rem;
+}
+
+.button-header {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button-header-logueado {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+button {
+    border: none;
+}
+
+.button-header button div {
+    background: linear-gradient(to right, var(--primario), var(--primario));
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: 0.5s;
+    background-color: white;
+    border-color: var(--primario);
+}
+
+.button-header button div:hover {
+    transition: 0.5s;
+    background-size: 100% 100%;
+    color: var(--colorQuinto);
+}
+
+.iniciales-y-saludo {
+    display: flex;
+}
+
+.button-iniciar-sesion,
+.button-crear-cuenta {
+    color: var(--primario);
+    border-radius: 0.31rem;
+    border: 1px solid var(--primario);
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    height: 2.5rem;
+    justify-content: space-around;
+    left: 56.5rem;
+    line-height: 1.19rem;
+    padding: 0px;
+    text-decoration: none;
+    top: 1.88rem;
+    width: 12.88rem;
+}
+
+.button-cerrar-sesion {
+    background: var(--colorQuinto);
+    border: none;
+    color: var(--colorTercero);
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+
+.label-iniciales {
+    align-items: center;
+    background: var(--colorSecundario);
+    border-radius: 100%;
+    color: var(--colorQuinto);
+    display: flex;
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 700;
+    height: 3rem;
+    justify-content: center;
+    margin-right: 0.63rem;
+    text-align: center;
+    width: 3rem;
+}
+
+.saludo {
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.19rem;
+}
+
+.span-container {
+    color: var(--primario);
+    font-family: Roboto;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.19rem;
+}
+
+
+.Header_menuHamburguesa__2VGwG {
+    display: none;
+}
+.SideNav_menuHamburguesa__221TF {
+    z-index: 1101;
+    display: block;
+    color: var(--colorTercero);
+    cursor: pointer;
+    font-size: 2.25rem;
+}
+.bx {
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bx-menu:before {
+    content: "\edc2";
+}
+
+
+.SideNav_opacity__190em {
+    background-color: rgba(0,0,0,.65);
+    z-index: 1099;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.SideNav_menuDrawer__2cky8 {
+    z-index: 1101;
+    height: 100vh;
+    width: 75vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(75vw);
+    transition: transform .7s;
+}
+
+.SideNav_isOpened__1du3o {
+    transform: translateX(-75vw);
+    transition: transform .7s;
+}
+
+.SideNav_header__1f0Cy {
+    background-color: var(--primario);
+    color: var(--colorSecundario);
+    font-size: 1.25rem;
+    height: 175px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+
+.SideNav_cerrarSideNav__3-jRf {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.SideNav_main__PKn7P, .SideNav_menuWord__rU_Tj {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.SideNav_main__PKn7P {
+    background-color: var(--colorQuinto);
+    height: calc(100vh - 233px);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 10px 15px;
+}
+
+.SideNav_opciones__3xhJ0 {
+    text-align: end;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.SideNav_opciones__3xhJ0 a {
+    color: var(--colorSecundario);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.SideNav_opciones__3xhJ0 a p {
+    padding: 2vh 0;
+    border-bottom: 1px solid var(--primario);
+    cursor: pointer;
+}
+
+.SideNav_footer__2Qu-h {
+    background-color: var(--primario);
+    color: var(--colorTercero);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+    grid-gap: 20px;
+    gap: 20px;
+    padding: 15px 10px;
+}
+
+.SideNav_linkRedSocial__1i8Fz {
+    color: var(--colorCuarto);
+    transition: all .15s ease-in-out;
+}
+
+.bx {
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bxl-facebook-circle:before {
+    content: "\e927";
+}
+
+.Profile_contenedorProfile__2rWnF {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 12px;
+    gap: 12px;
+    position: relative;
+}
+
+
+.Profile_avatar__wwXnz {
+    background-color: var(--colorSecundario);
+    color: var(--colorQuinto);
+    border-radius: 50%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 7px;
+}
+
+.Profile_saludo__3PK0a {
+    color: rgba(0,0,0,.5);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.Profile_nombre__9jGWT {
+    color: var(--primario);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Profile_contenedorNombre__3pbRO a {
+    display: block;
+    text-align: center;
+    transition: all .25s ease-in-out;
+    background-color: transparent;
+    border: 1px solid var(--color-2);
+    color: var(--color-2);
+    border-radius: 5px;
+}
+
+.SideNav_favoritosSidenav__3GWxa {
+    padding: 2vh 0;
+    color: #000;
+    cursor: pointer;
+}
+
+.SideNav_cerrarSesion__1bdfL {
+    color: rgba(0, 0, 0, 1);
+    font-size: .75rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--colorTercero);
+    opacity: .7;
+    position: relative;
+    top: 90%;
+    padding-bottom: 0.5vh;
+    text-align: end;
+    width: 100%;
+}
+
+.SideNav_crearNuevoAlojamiento {
+    color: rgba(0, 0, 0, 1);
+    font-size: .75rem;
+    font-weight: 500;
+    opacity: .7;
+    position: relative;
+    top: 90%;
+    padding-bottom: 0.5vh;
+    text-align: end;
+    width: 100%;
+}
+
+.SideNav_cerrarSesion__1bdfL span,
+.SideNav_crearNuevoAlojamiento span{
+    color: var(--primario);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container-a:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+    .header-element {
+        height: 6.13rem;
+        padding: 1.56rem 2rem 1.31rem 1.88rem;
+        width: 100%;
+    }
+    .h2-title {
+        display: none;
+    }
+    .button-iniciar-sesion {
+        left: 1.44rem;
+        top: 19.5rem;
+        width: 10.25rem;
+    }
+    .button-crear-cuenta {
+        left: 1.44rem;
+        top: 19.5rem;
+        width: 10.25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .Profile_contenedorNombre__3pbRO a {
+        display: none;
+    }
+    .Profile_nombre__9jGWT {
+        color: var(--colorSecundario);
+    }
+    .Profile_saludo__3PK0a {
+        color: var(--colorQuinto);
+    }
+    .Profile_avatar__wwXnz {
+        background-color: var(--colorQuinto);
+        color: var(--colorTercero);
+    }
+    .Profile_contenedorNombre__3pbRO, .Profile_contenedorProfile__2rWnF {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .fYiHHz {
+        max-height: 22rem;
+        z-index: 1; 
+    }
+    .Header_menuHamburguesa__2VGwG {
+        display: block;
+    }
+
+    .adminButton {
+        padding: 20px;
+    }
+    .container-a:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+    .header-element {
+        height: 5.81rem;
+        padding: 1.25rem 0.81rem 1.44rem 0.69rem;
+        width: 100%;
+    }
+    .h2-title {
+        display: none;
+    }
+    .iniciales-y-saludo {
+        display: none;
+    }
+    .button-iniciar-sesion {
+        display: none;
+    }
+    .button-crear-cuenta {
+        display: none;
+    }
+    .button-cerrar-sesion {
+        display: none;
+    }
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+        display: flex;
+        height: 0.75rem;
+        height: 0.75rem;
+        left: 23.50rem;
+        position: absolute;
+        position: fixed;
+        top: 2.44rem;
+        width: 1.56rem;
+        width: 1.56rem;
+        z-index: 1;
+    }
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+        background: var(--colorTercero);
+        ;
+    }
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+        background: var(--primario);
+        cursor: pointer;
+    }
+    /* Position and sizing of clickable cross button */
+    .bm-cross-button {
+        display: block;
+        height: 1.5rem;
+        right: 0.13rem;
+        width: 1.5rem;
+    }
+    /* Color/shape of close button cross */
+    .bm-cross {
+        background: #FFFFFF;
+    }
+    .bm-menu {
+        background: #373a47;
+        display: flex;
+        font-size: 1.15em;
+        height: 100%;
+        justify-content: flex-end;
+        padding: 12.5rem 0.94rem 0 0;
+    }
+    .bm-menu-wrap .bm-menu {
+        padding: 12.5rem 0.94rem 0 0;
+    }
+    /* Individual item */
+    .bm-item {
+        display: inline-block;
+        padding-bottom: 1.25rem;
+    }
+    /* Styling of overlay */
+    .bm-overlay {
+        background: rgba(0, 0, 0, 1);
+    }
+    .bm-menu-wrap {
+        top: 0;
+    }
+}
+
+
+

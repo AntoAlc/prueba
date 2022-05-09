@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300&display=swap');
+:root {
+    --primario: #F0572D;
+    --colorSecundario: #31363F;
+    --colorTercero: #191B1D;
+    --colorCuarto: #DFE4EA;
+    --colorQuinto: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*
+SECCION BUSCAR POR TIPO DE ALOJAMIENTO EXCEPTO CARDS (ESTÁN EN Category.css)
+*/
+
+.recomendaciones {
+    background-color: var(--colorCuarto);
+    display: flex;
+    flex-direction: column;
+}
+
+.recomendaciones h2 {
+    color: var(--colorSecundario);
+    font-size: 1.5rem;
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: 0em;
+    line-height: 1.75rem;
+    margin: 1.19rem 0 0.63rem 0;
+    text-align: left;
+}
+
+.recomendaciones .containerRecomendaciones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.etiqueta-container {
+    width: 46vw;
+    transition: 0.5s;
+}
+
+.etiqueta-container:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    color: var(--primario);
+    text-decoration: none;
+}
+
+.recomendaciones .card-container-recomendaciones {
+    width: 100%;
+    height: 17.69rem;
+    background: #FFFFFF;
+    /* A- DB COLOR 4 */
+    border: 0.06rem solid #DFE4EA;
+    box-sizing: border-box;
+    box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 5%;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-img {
+    /*  padding-right: 0.63rem;*/
+    width: 48%;
+    height: 100%;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-img img {
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    right: 51.02%;
+    top: 0%;
+    bottom: 0%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones {
+    display: flex;
+    flex-direction: column;
+    padding: 1.31rem 0.88rem 0.69rem 0.88rem;
+    justify-content: space-between;
+    width: 52%;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .nombre-alojamiento {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+}
+
+.sinPuntuacion {
+    width: 100% !important;
+}
+
+.categoria-estrellas {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.nombre-alojamiento .categoria-estrellas p {
+    text-transform: uppercase;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .nombre-alojamiento p {
+    left: 51.65%;
+    right: 18.58%;
+    top: 7.42%;
+    bottom: 82.33%;
+    font-weight: bold;
+    font-size: 0.88rem;
+    margin-right: 0.1rem;
+    line-height: 1.06rem;
+    color: var(--colorSecundario);
+    opacity: 0.5;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .nombre-alojamiento h5 {
+    /* B- Heading 1 */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    /* B - DB COLOR 2 */
+    color: var(--colorSecundario);
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .puntuacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .puntuacion p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.88rem;
+    line-height: 1rem;
+    text-align: right;
+    padding-top: 0.31rem;
+    /* B - DB COLOR 2 */
+    color: var(--colorSecundario);
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .puntuacion .ocho {
+    /* 8 */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.44rem;
+    /* identical to box height */
+    text-align: center;
+    padding-top: 0px;
+    /* B - DB COLOR 4 */
+    color: var(--colorCuarto);
+}
+
+.containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones .nombre-puntuacion .puntuacion .ocho-container {
+    /* B - DB COLOR 2 */
+    background: var(--colorSecundario);
+    /* B - DB COLOR 2 */
+    border: 1px solid var(--colorSecundario);
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    width: 2.5rem;
+    padding: 5%;
+}
+
+.ubicacion div {
+    display: flex;
+    /* flex-wrap   : wrap; */
+    /* margin      : 22px; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ubicacion .iconos-wifi-swimming {
+    display: flex;
+    gap: 0.5rem;
+    width: 43%;
+    padding-top: 0.13rem;
+}
+
+.ubicacion div p {
+    /* B- Text 1 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: 1rem;
+    /* B - DB COLOR 2 */
+    color: var(--colorSecundario);
+    padding: 0.25rem;
+    width: -webkit-fill-available;
+}
+
+.ubicacion div a {
+    /* B- Text 1 */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: 1rem;
+    /* B - DB COLOR 2 */
+    color: #F0572D;
+    text-align: right;
+}
+
+.descripcion p {
+    /* B- Text 1 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.88rem;
+    line-height: 1rem;
+    /* B - DB COLOR 2 */
+    color: var(--colorSecundario);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.ver-mas {
+    height: 2.5rem;
+    filter: drop-shadow(0px 0.13rem 0.25rem var(--colorCuarto));
+    /* color        : #FFFFFF; */
+    background-color: var(--primario);
+    padding: 0.19rem;
+    margin-top: 0.19rem;
+    border-radius: 0.41rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ver-mas a {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.enlace-mas {
+    color: var(--primario);
+}
+
+@media (max-width: 1100px){
+    .categoria-estrellas {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .categoria-estrellas {
+        flex-direction: row;
+        align-items: center;
+    }
+    /*.recomendaciones .containerRecomendaciones {
+        justify-content: center;
+    }*/
+    .etiqueta-container {
+        width: 100%;
+    }
+    /* 
+    .nombre-alojamiento h5 {
+        font-size-adjust: calc();
+    } */
+    .etiqueta-container:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width: 650px){
+    .categoria-estrellas {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .categoria-estrellas {
+        flex-direction: row;
+        align-items: center;
+    }
+    .etiqueta-container:hover {
+        transform: none;
+        transition: 0.5s;
+    }
+    .etiqueta-container {
+        width: 100%;
+    }
+    .recomendaciones .card-container-recomendaciones {
+        width: 24.56rem;
+        display: flex;
+        margin: 1 rem 0;
+        flex-direction: column;
+        overflow: hidden;
+        height: auto;
+    }
+    .containerRecomendaciones .card-container-recomendaciones .card-img {
+        padding-right: 0;
+        height: 47%;
+        width: 100%;
+    }
+    .containerRecomendaciones .card-container-recomendaciones .card-img img {
+        height: 40vw;
+        width: 100%;
+        object-fit: cover;
+    }
+    .containerRecomendaciones .card-container-recomendaciones .tresRenglones {
+        padding-right: 0;
+        height: 12.4rem;
+    }
+    .card-text-recomendaciones {
+        padding: 0 0.88rem 0 0.88rem;
+    }
+    .recomendaciones .containerRecomendaciones {
+        justify-content: center;
+    }
+    .buscarPorTipoAlojamiento .containerBuscarPorTipo {
+        justify-content: center;
+    }
+    .nombre-puntuacion {
+        margin-bottom: 12px;
+    }
+    .ubicacion {
+        margin-bottom: 10px;
+    }
+    .descripcion {
+        margin-bottom: 10px;
+    }
+    .containerRecomendaciones .card-container-recomendaciones .card-text-recomendaciones {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .containerRecomendaciones .card-container-recomendaciones .card-img img {
+        height: 50vw;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+}
